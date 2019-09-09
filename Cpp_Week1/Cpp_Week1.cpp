@@ -5,9 +5,9 @@
 class LetDebug {
 public:
 	void printNum() {
-		short s1 = 32767;
+		unsigned short s1 = 32767;
 		short s2 = 1;
-		short s3 = (short)s1 + s2;
+		short s3 = s1 + s2;
 		std::cout << s3 << std::endl;
 	}
 };
@@ -19,6 +19,8 @@ int main()
 {
 	LetDebug* id = new LetDebug;
 	id->printNum();
+
+	std::cout << "201602057" >> std::endl;
 	system("pause");
 	return 0;
 }
